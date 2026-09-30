@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this software and independently cite the Copernicus DEM source data. Add the repository URL and named authors before creating a formal software release."
+title: "GLO-30 Download"
+type: software
+version: 5.1.0
+date-released: 2026-09-30
+authors:
+  - name: "Walker KB"
+license: MIT
+abstract: "A reproducible downloader for Copernicus DEM GLO-30 2024_1 with global and ISO3 selection, local-first reuse, resumable transfers, manifests, and audits."
+keywords:
+  - Copernicus DEM
+  - GLO-30
+  - DGED
+  - DTED
+  - geospatial
+  - reproducibility
+# Add repository-code, actual authors, and a DOI/archival identifier when established.

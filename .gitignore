@@ -1,0 +1,32 @@
+# Local settings and secrets
+config.local.toml
+.env
+.env.*
+!.env.example
+*credentials*
+*secret*
+
+# Downloaded data, caches, reports, and temporary files
+GLO_30/
+*.tif
+*.tiff
+*.dt2
+*.part
+*.placing
+*.log
+_metadata/
+logs/
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+.coverage
+htmlcov/

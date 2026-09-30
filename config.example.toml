@@ -1,0 +1,26 @@
+# Copy to config.local.toml and run:
+# python GLO30_Download.py --config config.local.toml --dry-run
+#
+# Product profile (DGED vs DTED) is selected in the PRODUCTS block near the
+# top of GLO30_Download.py. Exactly one product must be True.
+# Single-quoted TOML paths preserve Windows backslashes.
+
+root_dir = 'D:\GIS_Data'
+download_all = false
+workers = 4
+copy_mode = "copy"              # Or "hardlink"; hardlinks share underlying bytes.
+verify_hashes = false           # Compare with locally recorded SHA-256 digests.
+deep_audit = false              # Read every raster block; needs requirements-validation.txt.
+existing_raster_dirs = []       # Only folders containing the SAME selected product/release.
+
+[countries]
+THA = false
+NER = false
+NGA = false
+GHA = false
+SEN = false
+
+# Optional overrides: one WGS84 longitude/latitude GeoJSON per country.
+# Otherwise full gbOpen ADM0 geometries are fetched from geoBoundaries and cached.
+[boundary_files]
+# THA = 'D:\Boundaries\THA_ADM0.geojson'
